@@ -36,7 +36,8 @@ class Student
 
   def self.all_students_in_grade_9
     self.all.map do |row|
-      row
+      if row.grade = 9
+        row
     end
   end
 
