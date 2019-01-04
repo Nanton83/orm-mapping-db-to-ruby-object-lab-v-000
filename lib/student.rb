@@ -1,3 +1,4 @@
+require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
@@ -36,6 +37,7 @@ class Student
 
   def self.all_students_in_grade_9
     self.all.map do |row|
+      binding.pry
       row.grade
     end
   end
