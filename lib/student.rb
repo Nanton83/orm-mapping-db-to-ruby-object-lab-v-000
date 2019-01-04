@@ -38,6 +38,7 @@ class Student
     self.all.map do |row|
       if row.grade == 9
         row
+      end
     end
   end
 
