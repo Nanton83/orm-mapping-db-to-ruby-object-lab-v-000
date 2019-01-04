@@ -36,13 +36,8 @@ class Student
   end
 
   def self.all_students_in_grade_9
-    grade_9 = []
-    self.all.each do |row|
-      if row.grade == 9
-        grade_9 << row
-      end
+    self.all.map do |row|
     end
-    grade_9
   end
 
   def save
