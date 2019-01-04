@@ -77,7 +77,7 @@ class Student
     SQL
 
     first_row = DB[:conn].execute(sql)[0]
-    binding.pry
+    self.new_from_db(first_row)
   end
 
   def self.all_students_in_grade_X(x)
