@@ -40,6 +40,7 @@ class Student
     self.all.each do |row|
       if row.grade == 9
         grade_9 << row
+      end 
     end
     grade_9
   end
