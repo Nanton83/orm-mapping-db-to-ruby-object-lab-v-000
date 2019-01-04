@@ -36,10 +36,12 @@ class Student
   end
 
   def self.all_students_in_grade_9
-    self.all.map do |row|
-      binding.pry
-      row.grade
+    grade_9 = []
+    self.all.each do |row|
+      if row.grade == 9
+        grade_9 << row
     end
+    grade_9
   end
 
   def save
